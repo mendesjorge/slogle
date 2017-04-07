@@ -61,7 +61,7 @@ var Logger = function(logToken, options){
 		LE.init(LogToken);
 		L = LE;
 		Stack = StackTrace;
-		//simpleLog("page "+location.href);
+
 		if(options){
 			debug = options.debug || false;
 			this.BeforeLog = options.BeforeLogHandler;
@@ -144,7 +144,6 @@ var Logger = function(logToken, options){
 	/**
 	 * INSTANCE FUNCTIONS
 	 */
-	//this.INIT = init;
 	this.LOG = simpleLog;
 	this.ERROR = errorLog;
 
@@ -154,13 +153,3 @@ var Logger = function(logToken, options){
 };
 
 module.exports  = Logger;
-
-//Example of using
-
-// var logger = new Logger('8fbe56c9-134e-4112-a685-2a99c4b3fcaf',{global_error_catch:true, debug:true});
-
-// var test = function(){
-// 	var arr = [];
-// 	arr.push(1);
-// 	arr.get();
-//};
